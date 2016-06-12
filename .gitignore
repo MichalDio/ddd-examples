@@ -1,0 +1,55 @@
+*.checkstyle
+*activemq-data
+*gwt-unitCache
+*.log
+*.tlog
+*.gwt-log
+*coverage.ec
+*~
+*.gz
+
+# Ignore artifacts
+bin/
+build/
+
+# Ignore Eclipse
+.project
+.settings
+version.info
+.classpath
+
+rebel.xml
+
+### Ignore Jetbrains IDEA files
+# all *.iml files
+*.iml
+*s101*
+*.ipr
+*.iws
+# all folders with .idea
+.idea
+# all .pmd files
+*.pmd
+infinitest*
+/out
+
+### Ignore Gradle files
+.gradle
+.gradle/
+gradle-app.setting
+*.metadata*
+.java-version
+atlassian-ide-plugin.xml
+classes/
+
+###Ignore node js files and modules
+./src/web/node_modules
+./src/web/nodejs
+./src/main/resources/public
+./src/web/node_modules/
+./src/web/nodejs/
+./src/main/resources/public/
+resource_bundle.js
+
+###Ignore resource_bundle.js from i18n
+./src/web/src/constants/
