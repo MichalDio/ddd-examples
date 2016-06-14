@@ -7,4 +7,8 @@ public class ClientRepository {
     public Client findByPersonalNumber(long clientId) {
         return null;
     }
+
+    public void save(Client client) {
+
+    }
 }

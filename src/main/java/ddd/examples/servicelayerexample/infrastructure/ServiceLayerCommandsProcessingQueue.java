@@ -1,16 +1,10 @@
 package ddd.examples.servicelayerexample.infrastructure;
 
-import ddd.examples.servicelayerexample.servicelayer.CreateTaskServiceLayerCommand;
+import ddd.examples.servicelayerexample.base.ServiceLayerCommand;
 
-/**
- * Created by Lukas on 10.6.2016.
- */
 public class ServiceLayerCommandsProcessingQueue {
-    public void enque(CreateTaskServiceLayerCommand createTaskServiceLayerCommand) {
 
-    }
-
-    public void process(CreateTaskServiceLayerCommand createTaskServiceLayerCommand) {
+    public void process(ServiceLayerCommand command) {
 
     }
 }

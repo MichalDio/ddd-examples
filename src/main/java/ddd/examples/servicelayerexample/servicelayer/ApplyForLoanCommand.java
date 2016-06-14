@@ -12,4 +12,12 @@ public class ApplyForLoanCommand extends ServiceLayerCommand {
     }
 
     public long clientId;
+
+    public long getClientId() {
+        return clientId;
+    }
+
+    public String loanParams() {
+        return "loanParams";
+    }
 }
