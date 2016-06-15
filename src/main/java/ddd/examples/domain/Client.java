@@ -1,11 +1,9 @@
 package ddd.examples.domain;
 
+import ddd.examples.domain.base.AggregateRoot;
 import ddd.examples.domain.services.IdentificationService;
 
-public class Client extends EntityBase {
-    public void addLoanApplication(LoanApplication loanApplication) {
-
-    }
+public class Client extends AggregateRoot {
 
     public void addLoan(Loan loan) {
 
@@ -15,7 +13,6 @@ public class Client extends EntityBase {
     }
 
     public void identify() {
-
     }
 
     public void identifyBy(IdentificationService identificationService) {

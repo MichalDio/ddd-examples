@@ -1,7 +1,6 @@
 package ddd.examples.domain;
 
-/**
- * Created by Lukas on 10.6.2016.
- */
-public class Loan {
+import ddd.examples.domain.base.Entity;
+
+public class Loan extends Entity {
 }

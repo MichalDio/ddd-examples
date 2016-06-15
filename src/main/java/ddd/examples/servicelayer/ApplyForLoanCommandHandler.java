@@ -35,7 +35,7 @@ public class ApplyForLoanCommandHandler extends ServiceLayerCommandHandler<Apply
 
         if (loanApplication.isAccepted()) {
 
-            //Or domain event
+            //Can by also solved by domain event LoanApplicationAcceptedEvent
             commandsQueue.process(new CreateLoanForClientCommand(command.clientId,
                                                                              command.loanParams(),
                                                                              loanApplication.getId()));

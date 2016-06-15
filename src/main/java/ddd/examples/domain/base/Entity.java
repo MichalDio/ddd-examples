@@ -1,6 +1,6 @@
-package ddd.examples.domain;
+package ddd.examples.domain.base;
 
-public abstract class EntityBase {
+public abstract class Entity {
     private long id;
 
     public long getId() {
