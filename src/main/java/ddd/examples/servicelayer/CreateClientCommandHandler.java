@@ -1,7 +1,7 @@
-package ddd.examples.servicelayerexample.servicelayer;
+package ddd.examples.servicelayer;
 
-import ddd.examples.servicelayerexample.base.ServiceLayerCommandHandler;
-import ddd.examples.servicelayerexample.domain.*;
+import ddd.examples.base.ServiceLayerCommandHandler;
+import ddd.examples.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class CreateClientCommandHandler extends ServiceLayerCommandHandler<CreateClientCommand,CreateClientCommandResponse> {

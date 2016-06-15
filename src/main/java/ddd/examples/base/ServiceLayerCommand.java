@@ -1,4 +1,4 @@
-package ddd.examples.servicelayerexample.base;
+package ddd.examples.base;
 
 public abstract class ServiceLayerCommand {
 }

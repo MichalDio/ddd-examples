@@ -1,6 +1,6 @@
-package ddd.examples.servicelayerexample.domain;
+package ddd.examples.domain;
 
-import ddd.examples.servicelayerexample.servicelayer.CreateClientCommand;
+import ddd.examples.servicelayer.CreateClientCommand;
 
 public class ClientFactory {
     public Client create(CreateClientCommand command) {

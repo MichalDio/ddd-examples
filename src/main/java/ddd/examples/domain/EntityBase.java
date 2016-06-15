@@ -1,4 +1,4 @@
-package ddd.examples.servicelayerexample.domain;
+package ddd.examples.domain;
 
 public abstract class EntityBase {
     private long id;

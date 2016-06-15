@@ -1,9 +1,9 @@
-package ddd.examples.servicelayerexample.servicelayer;
+package ddd.examples.servicelayer;
 
-import ddd.examples.servicelayerexample.base.ServiceLayerCommandHandler;
-import ddd.examples.servicelayerexample.domain.*;
-import ddd.examples.servicelayerexample.infrastructure.ServiceLayerCommandsProcessingQueue;
-import ddd.examples.servicelayerexample.infrastructure.Transactional;
+import ddd.examples.base.ServiceLayerCommandHandler;
+import ddd.examples.domain.*;
+import ddd.examples.infrastructure.ServiceLayerCommandsProcessingQueue;
+import ddd.examples.infrastructure.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class ApplyForLoanCommandHandlerV2 extends ServiceLayerCommandHandler<ApplyForLoanCommand, ApplyForLoanCommandResponse> {

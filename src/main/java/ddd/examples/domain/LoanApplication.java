@@ -1,4 +1,4 @@
-package ddd.examples.servicelayerexample.domain;
+package ddd.examples.domain;
 
 public class LoanApplication extends EntityBase {
     private boolean rejected;

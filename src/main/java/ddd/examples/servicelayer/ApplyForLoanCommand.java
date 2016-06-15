@@ -1,6 +1,6 @@
-package ddd.examples.servicelayerexample.servicelayer;
+package ddd.examples.servicelayer;
 
-import ddd.examples.servicelayerexample.base.ServiceLayerCommand;
+import ddd.examples.base.ServiceLayerCommand;
 
 public class ApplyForLoanCommand extends ServiceLayerCommand {
     public long getClientPersonalNumber() {

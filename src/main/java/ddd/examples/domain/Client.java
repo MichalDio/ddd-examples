@@ -1,4 +1,4 @@
-package ddd.examples.servicelayerexample.domain;
+package ddd.examples.domain;
 
 public class Client extends EntityBase {
     public void addLoanApplication(LoanApplication loanApplication) {

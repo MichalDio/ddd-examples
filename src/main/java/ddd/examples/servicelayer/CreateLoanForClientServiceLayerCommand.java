@@ -1,6 +1,6 @@
-package ddd.examples.servicelayerexample.servicelayer;
+package ddd.examples.servicelayer;
 
-import ddd.examples.servicelayerexample.base.ServiceLayerCommand;
+import ddd.examples.base.ServiceLayerCommand;
 
 public class CreateLoanForClientServiceLayerCommand extends ServiceLayerCommand {
     public CreateLoanForClientServiceLayerCommand(long clientId, String loanParams, long applicationId) {

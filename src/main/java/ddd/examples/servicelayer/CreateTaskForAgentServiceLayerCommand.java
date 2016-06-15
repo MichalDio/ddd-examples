@@ -1,6 +1,6 @@
-package ddd.examples.servicelayerexample.servicelayer;
+package ddd.examples.servicelayer;
 
-import ddd.examples.servicelayerexample.base.ServiceLayerCommand;
+import ddd.examples.base.ServiceLayerCommand;
 
 /**
  * Created by Lukas on 10.6.2016.
