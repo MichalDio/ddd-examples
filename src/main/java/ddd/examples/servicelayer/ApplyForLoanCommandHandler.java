@@ -1,5 +1,6 @@
 package ddd.examples.servicelayer;
 
+import ddd.examples.domain.services.RiskService;
 import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.domain.*;
 import ddd.examples.infrastructure.ServiceLayerCommandsProcessingQueue;

@@ -1,5 +1,7 @@
 package ddd.examples.domain;
 
+import ddd.examples.domain.services.IdentificationService;
+
 public class Client extends EntityBase {
     public void addLoanApplication(LoanApplication loanApplication) {
 

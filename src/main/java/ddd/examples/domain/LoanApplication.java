@@ -1,5 +1,7 @@
 package ddd.examples.domain;
 
+import ddd.examples.domain.services.RiskService;
+
 public class LoanApplication extends EntityBase {
     private boolean rejected;
 

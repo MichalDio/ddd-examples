@@ -1,5 +1,7 @@
 package ddd.examples.servicelayer;
 
+import ddd.examples.domain.IdentificationResult;
+import ddd.examples.domain.services.IdentificationService;
 import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
