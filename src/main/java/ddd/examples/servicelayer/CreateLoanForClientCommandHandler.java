@@ -6,6 +6,8 @@ import ddd.examples.domain.Loan;
 import ddd.examples.domain.LoanFactory;
 import ddd.examples.infrastructure.Transactional;
 import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
+import ddd.examples.servicelayer.commands.CreateLoanForClientCommand;
+import ddd.examples.servicelayer.commands.CreateLoanForClientCommandResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class CreateLoanForClientCommandHandler extends ServiceLayerCommandHandler<CreateLoanForClientCommand,CreateLoanForClientCommandResponse>{

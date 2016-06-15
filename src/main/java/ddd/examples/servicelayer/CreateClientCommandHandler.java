@@ -5,6 +5,8 @@ import ddd.examples.domain.services.IdentificationService;
 import ddd.examples.infrastructure.Transactional;
 import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.domain.*;
+import ddd.examples.servicelayer.commands.CreateClientCommand;
+import ddd.examples.servicelayer.commands.CreateClientCommandResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class CreateClientCommandHandler extends ServiceLayerCommandHandler<CreateClientCommand,CreateClientCommandResponse> {

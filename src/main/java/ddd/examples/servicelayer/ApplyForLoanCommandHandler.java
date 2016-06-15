@@ -5,6 +5,10 @@ import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.domain.*;
 import ddd.examples.infrastructure.ServiceLayerCommandsProcessingQueue;
 import ddd.examples.infrastructure.Transactional;
+import ddd.examples.servicelayer.commands.ApplyForLoanCommand;
+import ddd.examples.servicelayer.commands.ApplyForLoanCommandResponse;
+import ddd.examples.servicelayer.commands.CreateLoanForClientCommand;
+import ddd.examples.servicelayer.commands.CreateTaskForAgentrCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class ApplyForLoanCommandHandler extends ServiceLayerCommandHandler<ApplyForLoanCommand, ApplyForLoanCommandResponse> {

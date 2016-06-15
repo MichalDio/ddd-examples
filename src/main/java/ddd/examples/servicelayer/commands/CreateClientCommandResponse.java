@@ -1,4 +1,4 @@
-package ddd.examples.servicelayer;
+package ddd.examples.servicelayer.commands;
 
 import ddd.examples.servicelayer.base.ServiceLayerCommandResponse;
 
