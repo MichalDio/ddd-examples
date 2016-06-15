@@ -1,6 +1,6 @@
 package ddd.examples.servicelayer;
 
-import ddd.examples.base.ServiceLayerCommandResponse;
+import ddd.examples.servicelayer.base.ServiceLayerCommandResponse;
 
 public class CreateClientCommandResponse extends ServiceLayerCommandResponse {
     public CreateClientCommandResponse(long id) {

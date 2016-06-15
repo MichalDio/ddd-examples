@@ -1,6 +1,6 @@
 package ddd.examples.servicelayer;
 
-import ddd.examples.base.ServiceLayerCommandHandler;
+import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 

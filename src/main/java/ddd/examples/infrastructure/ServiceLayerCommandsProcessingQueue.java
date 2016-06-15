@@ -1,6 +1,6 @@
 package ddd.examples.infrastructure;
 
-import ddd.examples.base.ServiceLayerCommand;
+import ddd.examples.servicelayer.base.ServiceLayerCommand;
 
 public class ServiceLayerCommandsProcessingQueue {
 
