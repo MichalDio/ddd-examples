@@ -35,7 +35,7 @@ public class ApplyForLoanCommandHandler extends ServiceLayerCommandHandler<Apply
         if (loanApplication.isAccepted()) {
 
             //Or domain event
-            commandsQueue.process(new CreateLoanForClientServiceLayerCommand(command.clientId,
+            commandsQueue.process(new CreateLoanForClientCommand(command.clientId,
                                                                              command.loanParams(),
                                                                              loanApplication.getId()));
             return new ApplyForLoanCommandResponse("Your Loan is approved dude!!!");
@@ -46,7 +46,7 @@ public class ApplyForLoanCommandHandler extends ServiceLayerCommandHandler<Apply
 
         } else {
 
-            commandsQueue.process(new CreateTaskForAgentServiceLayerCommand(command.getClientId(), "Handle his application"));
+            commandsQueue.process(new CreateTaskForAgentrCommand(command.getClientId(), "Handle his application"));
             return new ApplyForLoanCommandResponse("We have to check you dude!!! Just wait!!!");
 
         }

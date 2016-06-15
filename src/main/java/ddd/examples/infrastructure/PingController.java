@@ -1,4 +1,4 @@
-package ddd.examples;
+package ddd.examples.infrastructure;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
