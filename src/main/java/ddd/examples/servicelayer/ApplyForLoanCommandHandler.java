@@ -39,7 +39,9 @@ public class ApplyForLoanCommandHandler extends ServiceLayerCommandHandler<Apply
 
         if (loanApplication.isAccepted()) {
 
-            //Can by also solved by domain event LoanApplicationAcceptedEvent
+            //Assumption is that Commands Queue have to be persistent and inserting of command to the queue is atomic with changes on LoanApplication aggregate.
+            //Processing of CreateLoanForClientCommand have to be atomic with marking a queue item as processed. When processing fails queue item should be in some error state
+            // or sent to death letter channel and after fix should be processed to get to consistent state.
             commandsQueue.process(new CreateLoanForClientCommand(command.clientId,
                                                                              command.loanParams(),
                                                                              loanApplication.getId()));
