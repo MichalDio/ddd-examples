@@ -32,7 +32,7 @@ public class CreateLoanForClientCommandHandler extends ServiceLayerCommandHandle
             clientRepository.save(client);
         }else{
             //No client in request
-            //TODO
+            //TODO handling
         }
 
 
