@@ -1,0 +1,1 @@
+"# ddd-examples-michal"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/MichalDio/ddd-examples-michal.gitgit push -u origin master
