@@ -9,7 +9,10 @@ import ddd.examples.servicelayer.base.ServiceLayerCommandHandler;
 import ddd.examples.servicelayer.commands.CreateLoanForClientCommand;
 import ddd.examples.servicelayer.commands.CreateLoanForClientCommandResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public class CreateLoanForClientCommandHandler extends ServiceLayerCommandHandler<CreateLoanForClientCommand,CreateLoanForClientCommandResponse>{
 
     @Autowired
