@@ -25,11 +25,17 @@ public class CreateLoanForClientCommandHandler extends ServiceLayerCommandHandle
     public CreateLoanForClientCommandResponse execute(CreateLoanForClientCommand command) {
 
         Client client = clientRepository.findById(command.getClientId());
+        if(client != null){
+            Loan loan = loanFactory.create(command.getLoanParams(),command.getApplicationId());
+            client.addLoan(loan);
 
-        Loan loan = loanFactory.create(command.getLoanParams(),command.getApplicationId());
-        client.addLoan(loan);
+            clientRepository.save(client);
+        }else{
+            //No client in request
+            //TODO
+        }
 
-        clientRepository.save(client);
+
 
         return new CreateLoanForClientCommandResponse();
     }
